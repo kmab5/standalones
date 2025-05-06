@@ -1,0 +1,31 @@
+.img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    perspective-origin: left;
+    position: relative;
+    z-index: 1;
+}
+
+.img:first-child {
+    perspective: 10rem;
+}
+
+#gate {
+    perspective: 240px;
+    transform: translateZ(100px);
+}
+
+#sword {
+    perspective: 540px;
+    animation: rotateXX 5s infinite linear;
+}
+
+@keyframes rotateXX {
+    0% {
+        transform: rotateX(-360deg);
+    }
+
+    100% {
+        transform: rotateX(360deg);
+    }
+}
